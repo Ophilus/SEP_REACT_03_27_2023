@@ -1,0 +1,70 @@
+body{
+    display:grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 10% [row1-end] auto [third-line] 15% [last-line];
+}
+nav{
+    grid-column:2 / span 3;
+    grid-row:row1-start / row1-end;
+}
+nav a{
+    float:left;
+}
+nav button{
+    float:right;
+    border: none;background-color: transparent;
+}
+nav h1{
+    padding-left: 45%;
+}
+main{
+    grid-column:2 / span 3;
+    grid-row:row1-end / third-line;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 5px;
+    margin-bottom: 20px;
+}
+footer{
+    grid-column:2 / span 3;
+    grid-row:third-line / last-line;
+    text-align: center;
+    background-color: rgba(154, 163, 167, 0.226);
+}
+.card{
+    width: 40%;
+    border: 3px solid rgba(154, 163, 167, 0.226);
+    padding: 20px 10px;
+}
+.mainInfo{
+    margin-bottom: 50px;
+}
+.mainInfo p{
+    margin:5px;
+    margin-left: 0;
+}
+.mainInfo h2{
+    margin-top:10px;
+    margin-bottom:0;
+}
+.tagGreen{
+ color:rgb(23, 146, 19);
+}
+.tagBlue{
+    color:rgb(37, 88, 228);
+}
+.date{
+    color:rgb(154, 163, 167);
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        width: 45%;
+    }
+  }
+  @media only screen and (max-width: 720px) {
+    .card{
+        width: 80%;
+    }
+  }
