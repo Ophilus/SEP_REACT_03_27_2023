@@ -1,0 +1,46 @@
+#postMain h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#postMain .date {
+  margin-top: 0;
+  padding-top: 0;
+}
+#info {
+  width: 80%;
+}
+#links {
+  width: 15%;
+  float: left;
+}
+#links h3 {
+  font-style: italic;
+}
+#links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#links .grayBlock {
+  background-color: rgba(154, 163, 167, 0.226);
+  padding: 10px 10px;
+}
+#borderParagraph {
+  border: rgba(154, 163, 167, 0.226) 2px solid;
+}
+#borderParagraph span {
+  font-weight: bold;
+}
+.older,
+.newer {
+  border-radius: 15px;
+  padding: 5px 5px;
+}
+.older {
+  color: rgb(37, 88, 228);
+  border: rgb(37, 88, 228) 1px solid;
+}
+.newer {
+  color: rgb(154, 163, 167);
+  border: rgb(154, 163, 167) 1px solid;
+}
